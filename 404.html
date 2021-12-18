@@ -37,12 +37,22 @@
       width: 280px;
     }
 
+    .allo
+    {
+      position: relative;
+      margin-top: 1em;
+    }
     @media only screen and (max-width: 280px) {
 
       body,
       p {
         width: 95%;
       }
+
+      .allo{
+      position: relative;
+      margin-top: 1em;
+    }
 
       h1 {
         font-size: 1.5em;
@@ -54,8 +64,9 @@
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <h1>Aucune page correspondante</h1>
+  <p>Désolé, la page que vous essayez d'atteindre est innacessible ou n'existe pas.</p>
+  <p class="allo">Revenir à <a href="index.html">l'acceuil</a></p>
 </body>
 
 </html>
