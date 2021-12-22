@@ -13,7 +13,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4rem 50rem 120rem 4rem;
+  grid-template-rows: 0rem 50rem 50rem 3rem;
   grid-template-areas:
     "nav nav"
     "main main"
@@ -58,12 +58,10 @@ main {
   padding-top: var(--main-padding);
 }
 .backgroundmain{
-  background: url(https://i1.wp.com/image7.uhdpaper.com/wallpaper/baby-yoda-the-mandalorian-uhdpaper.com-4K-7.990.jpg);
+  background: url(../img/realbbyoda.jpg);
   background-size: cover;
-  z-index: 1;
-  filter: blur(5px);
+  z-index: -1;
   position: sticky;
-  top: -10px;
 }
 /*
 .backgroundmain::after{
@@ -76,22 +74,21 @@ main {
 
 
 .content1 {
-  background:rgb(70, 30, 30);
+  background:rgb(255, 194, 194);
   grid-area: content1;
-  border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  filter: blur(10px);
   position:relative;
   z-index: 3;
+  
 }
 
 
 .content2 {
-  background:#6b91ca;
+  background:#ffe2a5;
   grid-area: content2;
-  border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  filter: blur(10px)
+  
+  z-index: 4;
 
 }
 
@@ -117,6 +114,116 @@ a {
 .mentions{
   color: red;
 }
+
+.h1index{
+  display: flex;
+  color: rgb(78, 34, 34);
+  justify-content:left;
+  align-items:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 550px) {
   .container {
     grid-template-columns: 1fr;
