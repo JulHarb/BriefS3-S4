@@ -12,14 +12,13 @@ body {
 .indexcontainer {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 0rem 50rem 30rem 3rem;
   grid-template-areas:
     "nav nav nav nav"
     "main main main main"
     ". content1 content1 ."
     "footer footer footer footer";
-  grid-gap: 0.1rem;
   font-weight: 800;
   text-transform:full-width;
   font-size: 12px;
@@ -44,7 +43,7 @@ nav {
 }
 
 footer {
-  background: #1de9b6;
+  background: #c85614;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -73,35 +72,21 @@ a {
   margin: 0;
   
 }
-/* INDEX ONLY */
+
 
 main {
   grid-area: main;
-
 }
+/* INDEX ONLY */
 
 
-
-.backgroundmain{
+.backgroundindex{
   display: grid;
   background: url(../img/realbbyoda.jpg);
   background-size: cover;
   z-index: -1;
   position: sticky;
 }
-
-
-
-.content2 {
-  background:#fcc247;
-  grid-area: content2;
-  padding-top: var(--main-padding);
-  
-  z-index: 4;
-
-}
-
-
 
 .h1index{
   margin-left: 150px;
@@ -121,66 +106,297 @@ main {
 
 
 .indexc1{
-  
   grid-area:content1;
   background: rgb(255, 158, 94);
   display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-
 
 .indeximg1{
   grid-area:content1;
   width: 20rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .indexp1{
   grid-area:content1;
+  text-align: center;
+}
+/* Fin Index */
+
+/* Début Studio */
+.studiocontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.3fr 1.3fr 0.5fr;
+  grid-template-rows: 0rem 70rem 10rem 3rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
+  font-weight: 800;
+  text-transform:full-width;
+  font-size: 12px;
+  background:rgba(255, 152, 250, 0);
 }
 
+.backgroundstudio{
+  display: grid;
+  background: url(../img/studio.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
 
+.h1studio{
+  margin-left: 250px;
+  margin-top: 350px;
+  display: flex;
+  color: rgb(185, 175, 39);
+  justify-content:left;
+  align-items:center;
+}
+.h2studio{
+  margin-left: 500px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content:left;
+}
 
+.studioc1{
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content:center;
+}
 
+.studioimg1{
+    width: 10rem;
+  }
+  /* end of studio */
 
+  /* contact here */
 
+.contactcontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.3fr 1.3fr 0.5fr;
+  grid-template-rows: 0rem 70rem 10rem 3rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
+  font-weight: 800;
+  text-transform:full-width;
+  font-size: 12px;
+  background:rgba(255, 152, 250, 0);
+}
 
+.backgroundcontact{
+  display: grid;
+  background: url(../img/support.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
 
+.h1contact{
+  margin-left: 250px;
+  margin-top: 50px;
+  display: flex;
+  color: rgb(255, 0, 0);
+  justify-content:left;
+  align-items:center;
+}
+.h2contact{
+  margin-left: 500px;
+  display: flex;
+  color: rgb(14, 14, 14);
+  justify-content:left;
+}
 
+.contactc1{
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content:center;
+}
 
+.contactp1{
+  grid-area:content1;
+  text-align: center;
+}
 
+/* end of contact */
 
+/* A PROPOS */
+.aproposcontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.3fr 1.3fr 0.5fr;
+  grid-template-rows: 0rem 70rem 10rem 3rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
+  font-weight: 800;
+  text-transform:full-width;
+  font-size: 12px;
+  background:rgba(255, 152, 250, 0);
+}
 
+.backgroundapropos{
+  display: grid;
+  background: url(../img/team.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
 
+.h1apropos{
+  margin-left: 600px;
+  margin-top: 50px;
+  display: flex;
+  color: rgb(255, 0, 0);
+  justify-content:left;
+  align-items:center;
+}
+.h2apropos{
+  margin-left: 900px;
+  display: flex;
+  color: rgb(14, 14, 14);
+  justify-content:left;
+}
 
+.aproposc1{
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content:center;
+}
 
+.aproposp1{
+  grid-area:content1;
+  text-align: center;
+}
+/* end of A propos */
 
+/* starting blog */
 
+.blogcontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.3fr 1.3fr 0.5fr;
+  grid-template-rows: 0rem 70rem 10rem 3rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
+  font-weight: 800;
+  text-transform:full-width;
+  font-size: 12px;
+  background:rgba(255, 152, 250, 0);
+}
 
+.backgroundblog{
+  display: grid;
+  background: url(../img/blog.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
 
+.h1blog{
+  margin-left: 600px;
+  margin-top: 50px;
+  display: flex;
+  color: rgb(255, 0, 0);
+  justify-content:left;
+  align-items:center;
+}
+.h2blog{
+  margin-left: 900px;
+  display: flex;
+  color: rgb(14, 14, 14);
+  justify-content:left;
+}
 
+.blogc1{
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content:center;
+}
 
+.blogp1{
+  grid-area:content1;
+  text-align: center;
+}
 
+/* end of blog */
 
+/* starting prestations */
 
+.prestationscontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1.3fr 1.3fr 0.5fr;
+  grid-template-rows: 0rem 70rem 10rem 3rem;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
+  font-weight: 800;
+  text-transform:full-width;
+  font-size: 12px;
+  background:rgba(255, 152, 250, 0);
+}
 
+.backgroundprestations{
+  display: grid;
+  background: url(../img/stonks.webp);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
 
+.h1prestations{
+  margin-left: 400px;
+  margin-top: 50px;
+  display: flex;
+  color: rgb(255, 0, 0);
+  justify-content:left;
+  align-items:center;
+}
+.h2prestations{
+  margin-left: 1400px;
+  display: flex;
+  color: rgb(14, 14, 14);
+  justify-content:left;
+}
 
+.prestationsc1{
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content:center;
+}
 
+.prestationsp1{
+  grid-area:content1;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.prestationsimg1{
+  width: 10em;
+  align-self: center;
+  justify-self:left;
+}
 
 
 
