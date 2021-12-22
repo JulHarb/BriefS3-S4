@@ -1,4 +1,4 @@
-# J'ai pas réussi à finir le site intégralement
+# Je n'ai pas réussi à finir le site intégralement
 
 Mes difficultés étaient :
 
@@ -7,3 +7,5 @@ Mes difficultés étaient :
 -Gestion des "parents-enfants"
 -séparation et organisation du CSS
 (manque de temps/de bases solides de mon côté)
+
+Lien de mon wireframe : https://www.figma.com/file/mSWpDQHBLrUq6EQl373h0C/Untitled
