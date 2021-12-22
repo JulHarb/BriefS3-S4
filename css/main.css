@@ -9,21 +9,20 @@ body {
   background:rgba(0, 0, 0, 0.986);
 }
 
-.container {
+.indexcontainer {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0rem 50rem 50rem 3rem;
+  grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+  grid-template-rows: 0rem 50rem 30rem 3rem;
   grid-template-areas:
-    "nav nav"
-    "main main"
-    "content1 content2"
-    "footer footer";
+    "nav nav nav nav"
+    "main main main main"
+    ". content1 content1 ."
+    "footer footer footer footer";
   grid-gap: 0.1rem;
   font-weight: 800;
   text-transform:full-width;
   font-size: 12px;
-  text-align: center;
   background:rgba(255, 152, 250, 0);
 }
 .banerimg{
@@ -42,54 +41,6 @@ nav {
   z-index: 2;
   position: sticky;
   top: -18px;
-}
-
-.ul1{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding: 0;
-  margin: 0;
-  
-}
-main {
-  grid-area: main;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-}
-.backgroundmain{
-  background: url(../img/realbbyoda.jpg);
-  background-size: cover;
-  z-index: -1;
-  position: sticky;
-}
-/*
-.backgroundmain::after{
-  background: url(https://i1.wp.com/image7.uhdpaper.com/wallpaper/baby-yoda-the-mandalorian-uhdpaper.com-4K-7.990.jpg);
-  background-size: cover;
-  z-index: 1;
-  filter: blur(0px);
-}
-*/
-
-
-.content1 {
-  background:rgb(255, 194, 194);
-  grid-area: content1;
-  padding-top: var(--main-padding);
-  position:relative;
-  z-index: 3;
-  
-}
-
-
-.content2 {
-  background:#ffe2a5;
-  grid-area: content2;
-  padding-top: var(--main-padding);
-  
-  z-index: 4;
-
 }
 
 footer {
@@ -114,17 +65,80 @@ a {
 .mentions{
   color: red;
 }
+.ul1{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+  
+}
+/* INDEX ONLY */
+
+main {
+  grid-area: main;
+
+}
+
+
+
+.backgroundmain{
+  display: grid;
+  background: url(../img/realbbyoda.jpg);
+  background-size: cover;
+  z-index: -1;
+  position: sticky;
+}
+
+
+
+.content2 {
+  background:#fcc247;
+  grid-area: content2;
+  padding-top: var(--main-padding);
+  
+  z-index: 4;
+
+}
+
+
 
 .h1index{
+  margin-left: 150px;
+  margin-top: 350px;
   display: flex;
-  color: rgb(78, 34, 34);
+  color: rgb(255, 193, 229);
+  justify-content:left;
+  align-items:center;
+}
+.h2index{
+  margin-left: 150px;
+  display: flex;
+  color: rgb(255, 193, 229);
   justify-content:left;
   align-items:center;
 }
 
 
+.indexc1{
+  
+  grid-area:content1;
+  background: rgb(255, 158, 94);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
+.indeximg1{
+  grid-area:content1;
+  width: 20rem;
+}
+
+.indexp1{
+  grid-area:content1;
+}
 
 
 
